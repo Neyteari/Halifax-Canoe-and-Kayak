@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    --my-theme-color: #054d99;
+    --my-theme-font: 'Gill Sans';
+    --my-theme-font-color: #FFFFFF; 
+}
+
+.header_bar {
+    width: 100vw;
+    height: 80px;
+    background-color: var(--my-theme-color);
+    display: flex;
+}
+
+.header_icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.header_title {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color: var(--my-theme-font-color);
+    font-size: 30pt;
+    font-family: var(--my-theme-font);
+}
+
+.main_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.main_img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.main_header {
+    font-size: 30pt;
+    font-family: var(--my-theme-font);
+}
