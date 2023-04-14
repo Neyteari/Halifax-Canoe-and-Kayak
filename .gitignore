@@ -1,0 +1,9 @@
+
+docker-compose.yml
+Dockerfile
+dockerfile.yml
+support/.idea/modules.xml
+support/.idea/php.xml
+support/.idea/support.iml
+support/.idea/vcs.xml
+support/.idea/workspace.xml

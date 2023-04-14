@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halifax Canoe and Kayak</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header class="header_bar">
-        <img id="nav_toggle_button" class="header_button" src="images/hamburger.png" alt="Menu">
-        <img class="logo" src="images/paddle-white.png" alt="logo">
+        <img id="nav_toggle_button" class="header_button" src="../images/hamburger.png" alt="Menu">
+        <img class="logo" src="../images/paddle-white.png" alt="logo">
         <nav class="header_nav">
             <ul class="header_nav_menu">
                 <li>Home</li>
@@ -22,7 +22,7 @@
         </header>       
     </header>
     <div class="head_image">
-        <img src="images/canoe.jpg" alt="Come experience Canada">
+        <img src="../images/canoe.jpg" alt="Come experience Canada">
         <div class="centered">Come Experience<br/>Canada</div>
     </div>
     <div>
