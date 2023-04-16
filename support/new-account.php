@@ -1,7 +1,7 @@
 <?php
 include('header.php');
 
-echo $body;
+echo 'new account';
 
 include('footer.php');
 ?>
