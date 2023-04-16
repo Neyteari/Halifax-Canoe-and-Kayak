@@ -20,4 +20,9 @@
         </nav>
         <div class="title"><h1>Halifax Canoe and Kayak</h1></div>       
     </header>
-<p>log out</p>
+<?php
+if (isset($_SESSION['role']))
+{
+    echo '<p align="right" style="margin-right: 50px;"><a href="logout.php">log out</a></p>';
+}
+?>
