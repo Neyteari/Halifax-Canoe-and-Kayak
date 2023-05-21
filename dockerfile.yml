@@ -1,0 +1,36 @@
+version: '3'
+services:
+  db:
+    image: mysql:8.0.32
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.2.0
+    environment:
+      PMA_ARBITRARY: 1
+    links:
+      - db:db
+    ports:
+      - 8080:80
+  php:
+    image: php:8.1-fpm-alpine
+    volumes:
+      - type: bind
+        source: "D:/Development/teagend"
+        target: /var/www/html/
+    links:
+      - db:db
+  web:
+    image: httpd:2.4.55-alpine
+    volumes:
+      - type: bind
+        source: "D:/Development/teagend"
+        target: /usr/local/apache2/htdocs/
+    links:
+      - db:db
+    ports:
+      - 80:80
+  
